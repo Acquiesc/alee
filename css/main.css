@@ -1,0 +1,164 @@
+/*GENERAL STYLING*/
+
+
+/*
+
+Color Palette:
+background-color: rgb(240, 235, 216); beige
+background-color: rgb(72, 149, 239); bright blue
+background-color: rgb(116, 140, 171); light blue
+background-color: rgb(62, 92, 118); blue-green
+background-color: rgb(29, 45, 68); navy blue
+background-color: rgb(13, 19, 33); dark blue
+
+https://coolors.co/palette/0d1321-1d2d44-3e5c76-748cab-f0ebd8
+
+*/
+
+/*all style*/
+a:hover {
+    cursor: pointer;
+}
+
+p {
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+.bold {
+    font-weight: 800 !important;
+    color: rgb(13, 19, 33) !important;
+}
+
+/*Wrap main content*/
+.main-content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: 0;
+    display: flex;
+}
+
+
+/*Background*/
+.background-back {
+    z-index: -1000;
+    background-color: rgb(29, 45, 68); /*navy blue*/
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+}
+
+.background-front {
+    z-index: -999;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 0 43%);
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(13, 19, 33); /*dark blue*/
+    position: fixed;
+}
+
+
+
+
+/*Navigation Bar*/
+.nav-left {
+    z-index: 1000;
+    width: 200px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+}
+
+.nav-left ul {
+    position: absolute;
+    left: 25%;
+    top: 35%;
+}
+
+.nav-left ul li {
+    margin-top: 20px;
+    font-size: 36px;
+    background-color: rgb(116, 140, 171); /*light blue*/
+    border-radius: 50px;
+    padding: 10px;
+    transition: background-color .5s ease-in-out;
+    width: 65px;
+    height: 62px;
+}
+
+.nav-left ul li:hover {
+    background-color: rgb(240, 235, 216); /*beige*/
+    height: 72px;
+    width: 75px;
+}
+
+/*General Logos*/
+.logo-link-wrapper {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    line-height: 50px;
+}
+
+.linkedIn-logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/icons/linkedInIconBW.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+
+.linkedIn-logo:hover {
+    background-image: url(../images/icons/linkedInIcon.jpg);
+}
+
+
+
+/*FADE ANIMATIONS*/
+.hidden {
+    opacity: 0 !important;
+    transition: opacity 3s !important;
+}
+
+.show {
+    opacity: 1 !important;
+}
+
+
+
+@media (max-width: 1200px) {
+    .nav-left {
+        width: 100%;
+        height: 100px;
+        background-color: rgba(83, 81, 81, 0.2);
+    }
+
+    .nav-left ul {
+        display: flex;
+        top: 0;
+        left: 0;
+        position: relative;
+        justify-content: space-evenly;
+    }
+
+    /*background*/
+
+    .main-content-wrapper {
+        margin-top: 100px;
+        min-height: calc(100vh - 100px);
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("eYU0IJ5TEK13rkVPq");
+      console.log("Connected to Email JS");
+   })();
+</script>
+
+    <title>Adam Lee's Portfolio</title>
+</head>
+<body>
+
+    <div class = "background-back">
+        <div class = "background-front">
+
+        </div>
+    </div>
+
+    <nav class = "nav-left">
+            <ul>
+                <a href = "index.html"><li><i class="fa-solid fa-house"></i></li></a>
+                <a href = "skills.html"><li><i class="fa-solid fa-book"></i></li></a>
+                <a href = "projects.html"><li><i class="fa-solid fa-computer"></i></li></a>
+                <a href = "contact.html"><li><i class="fa-solid fa-comment"></i></li></a>
+            </ul>   
+    </nav>
+
+    <main class = "main-content-wrapper">
+        <div class = "contact-form-wrapper">
+            <form class = "contact-form">
+                <fieldset>
+                    <legend>Contact Me</legend>
+
+                    <div class = "label-input-container">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Name...">
+                    </div>
+                    <div class = "label-input-container">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Email...">
+                    </div>
+                    <div class = "label-input-container">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone...">
+                    </div>
+                    <div class = "label-input-container">
+                        <label for="subject">Subject:</label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject...">
+                    </div>
+                    <div class = "label-input-container">
+                        <label for="msg">Message:</label>
+                        <textarea name="msg" id="msg" placeholder="Submit your text..."></textarea>
+                    </div>
+                    <button id="submitBtn">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class = "contact-alternate-wrapper">
+            <div class = "contact-alternate-header">
+                <h1>Alternate Contact Methods</h1>
+            </div>
+            <div class = "logo-link-wrapper">
+                <a href="#"><div class = "linkedIn-logo"></div></a><a href="#">Linked In</a>
+            </div>
+            <p>Email: aleeDevAndTech@gmail.com</p>
+        </div>
+    </main>    
+
+    <script src="./js/sendEmail.js"></script>
+
+</body>
+</html>

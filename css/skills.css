@@ -1,0 +1,191 @@
+/*GENERAL STYLING*/
+.main-content-wrapper {
+    display: block;
+}
+
+/*FIXED RIGHT SKILLS*/
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    right: 150px;
+    background-color: black;
+    margin-top: 5vh;
+    border: 1px solid gray;
+    background-color: rgb(29, 45, 68); /*navy blue*/
+    border-radius: 25px;
+    z-index: 500;
+    height: 90vh;
+}
+
+.skills-wrapper, .exp-wrapper {
+    color: white;
+    height: fit-content;
+    max-width: 35vw;
+    margin: 10px 15px;
+    text-align: center;
+    background-color: rgb(62, 92, 118); /*blue green*/
+    border-radius: 25px;
+}
+
+.skills-wrapper {
+    max-height: 33vh;
+    padding: 20px 5px;
+}
+
+.skills-wrapper h2 {
+    margin-bottom: 20px;
+}
+
+.skills-tag-icon {
+    display: flex;
+    min-height: 100px;
+    justify-content: space-evenly;
+}
+
+.skills-tag-icon i {
+    font-size: 64px;
+    align-self: center;
+}
+
+.skills-tag {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.skills-tag p {
+    padding: 5px;
+    border: 1px solid #111;
+    border-radius: 25px;
+    line-height: 32px;
+    font-size: 18px;
+    border: 1px solid gray;
+    background-color: rgba(151, 148, 148, 0.3);
+    transition: background-color .5s ease;
+    align-self: center;
+}
+
+.skills-tag p:hover {
+    background-color: rgba(151, 148, 148, 0.6);
+}
+
+
+/*Experience section*/
+.exp-scroll-container {
+    position: absolute;
+    left: 150px;
+    width: 50vw;
+    background-color: rgba(83, 81, 81, 0.4);
+    border-radius: 25px;
+    border: solid gray 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.exp-wrapper {
+    min-width: 95%;
+    margin: 25px auto 15vh auto;
+    text-align: left;
+    padding: 50px;
+    /*Styling with .skills-wrapper*/
+}
+
+.exp-wrapper:last-child  {
+    margin: 25px auto;
+}
+
+.exp-desc-group p {
+    padding: 5px 0;
+}
+
+
+/*Section Headers*/
+.exp-header {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: solid underline 3px rgb(13, 19, 33);
+    text-underline-offset: 4px;
+}
+
+/*Text description*/
+.exp-wrapper-text {
+    margin-right: 15%;
+    margin-bottom: 100px;
+    background-color: rgba(116, 140, 171, .5);
+    border-radius: 25px;
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+/*Job Duties UL*/
+.exp-wrapper-text ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.exp-wrapper-text ul li {
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+@media (max-width: 1200px) {
+    .skills-container {
+        right: 50px;
+        margin-top: 25px;
+        max-height: 85vh;
+    }
+    
+    .skills-wrapper h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .skills-tag p {
+        font-size: 18px;
+    }
+
+    .exp-scroll-container {
+        left: 50px;
+    }
+
+    .exp-wrapper-text {
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    
+
+    .skills-container {
+        left: 0;
+        top: 0;
+        position: relative;
+        width: 90vw;
+        margin: 25px auto;
+    }
+
+    .skills-wrapper {
+        min-width: 80vw;
+        margin: 20px auto;
+    }
+
+    .exp-scroll-container {
+        left: 0;
+        position: relative;
+        width: 90vw;
+        margin: 25px auto;
+    }
+
+    .exp-wrapper {
+        padding: 10px;
+    }
+
+    .exp-wrapper-text {
+        min-width: 80vw;
+        margin: 25px auto;
+    }
+}
