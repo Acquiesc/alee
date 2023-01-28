@@ -1,4 +1,5 @@
-const vids = document.getElementById('video');
+const portVids = document.getElementById('portvideo');
+const lpcVids = document.getElementById('lpcvideo')
 
 let index = 1;
 var fileNum = 4;
@@ -6,17 +7,23 @@ var fileNum = 4;
 
 function nextVid() {
     console.log("Next video called")
-    if(vids) {
-        if(index > fileNum-1) {
-            index = 0;
-        }
-        index++;
-        vids.src = "./images/projects/Portfolio/Portfolio" + (index) + ".mp4";
-        console.log("Video set to index source: " + index);
+    if(index > fileNum-1) {
+        index = 0;
+    }
+    index++;
+
+    if(portVids) {
+        portVids.src = "./images/projects/Portfolio/portfolio" + (index) + ".gif";
+        console.log("Portfolio video set to index source: " + index);
+    }
+
+    if(lpcVids) {
+        lpcVids.src = "./images/projects/lpc/lpc" + (index) + ".gif";
+        console.log("LPC video set to index source: " + index);
     }
 }
 
 
 var autoScroll = window.setInterval(function() {
     nextVid();
-}, 7000);
+}, 6900);
