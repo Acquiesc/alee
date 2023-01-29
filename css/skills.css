@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     position: fixed;
-    right: 150px;
+    right: 1%;
     background-color: black;
     margin-top: 5vh;
     border: 1px solid gray;
@@ -78,7 +78,7 @@
 .exp-scroll-container {
     position: absolute;
     left: 150px;
-    width: 50vw;
+    width: 45vw;
     background-color: rgba(83, 81, 81, 0.4);
     border-radius: 25px;
     border: solid gray 1px;
@@ -107,15 +107,15 @@
 .exp-header {
     text-align: center;
     margin-bottom: 20px;
-    text-decoration: solid underline 3px var(--darkBlue);
+    text-decoration: solid underline 3px var(--dark1);
     text-underline-offset: 4px;
 }
 
-/*Text description  swapped bkgrd color rgba to rgb + opac*/
+/*Text description*/
 .exp-wrapper-text {
     margin-right: 15%;
     margin-bottom: 100px;
-    background-color: var(--lightBlue);
+    background-color: var(--bright2);
     opacity: .5;
     border-radius: 25px;
     border: 1px solid gray;
@@ -134,10 +134,16 @@
 }
 
 @media (max-width: 1200px) {
+    /*Skills restyle*/
     .skills-container {
-        right: 50px;
+        right: 5%;
         margin-top: 25px;
         max-height: 85vh;
+        justify-content: space-around;
+    }
+
+    .skills-wrapper {
+        margin: 10px auto;
     }
     
     .skills-wrapper h2 {
@@ -145,12 +151,34 @@
         margin-bottom: 10px;
     }
 
-    .skills-tag p {
-        font-size: 18px;
+    .skills-tag {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        overflow: hidden;
     }
 
+    .skills-tag-icon i {
+        font-size: 36px;
+    }
+
+    .skills-tag p {
+        font-size: 14px;
+        padding: 0;
+    }
+
+
+    /*Experience restyle*/
     .exp-scroll-container {
-        left: 50px;
+        left: 5%;
+        width: 50vw;
+    }
+
+    .exp-header h1 {
+        font-size: 42px;
+    }
+
+    .exp-wrapper {
+        padding: 10px;
     }
 
     .exp-wrapper-text {
@@ -172,6 +200,24 @@
     .skills-wrapper {
         min-width: 80vw;
         margin: 20px auto;
+    }
+
+    .skills-wrapper h2 {
+        margin-bottom: 20px;
+    }    
+
+    .skills-wrapper p {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .skills-tag {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .skills-tag-icon i {
+        font-size: 48px;
     }
 
     .exp-scroll-container {

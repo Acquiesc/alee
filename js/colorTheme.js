@@ -5,17 +5,6 @@ btn.addEventListener('click', toggleColors);
 
 console.log("Color theme script loaded");
 
-function getColors() {
-    var color = getComputedStyle(colors);
-
-    console.log("The value of --beige is: " + color.getPropertyValue('--beige'));
-    console.log("The value of --lightBlue is: " + color.getPropertyValue('--lightBlue'));
-    console.log("The value of --brightBlue is: " + color.getPropertyValue('--brightBlue'));
-    console.log("The value of --blueGreen is: " + color.getPropertyValue('--blueGreen'));
-    console.log("The value of --navyBlue is: " + color.getPropertyValue('--navyBlue'));
-    console.log("The value of --darkBlue is: " + color.getPropertyValue('--darkBlue'));
-}
-
 function toggleColors() {
     var color = getComputedStyle(colors);
 
@@ -51,3 +40,17 @@ function setInitialTheme() {
         console.log("retained intial dark theme");
     }
 }
+
+/*
+Testing function - returns value of custom properties
+function getColors() {
+    var color = getComputedStyle(colors);
+
+    console.log("The value of --beige is: " + color.getPropertyValue('--beige'));
+    console.log("The value of --lightBlue is: " + color.getPropertyValue('--lightBlue'));
+    console.log("The value of --brightBlue is: " + color.getPropertyValue('--brightBlue'));
+    console.log("The value of --blueGreen is: " + color.getPropertyValue('--blueGreen'));
+    console.log("The value of --navyBlue is: " + color.getPropertyValue('--navyBlue'));
+    console.log("The value of --darkBlue is: " + color.getPropertyValue('--darkBlue'));
+}
+*/

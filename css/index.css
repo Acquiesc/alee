@@ -36,7 +36,7 @@
 }
 
 .index-text {
-    margin: 50px;
+    margin: 20px;
     color: white;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .index-text h1 span {
-    color: var(--brightBlue); /*bright blue*/
+    color: var(--bright3); /*bright blue*/
 }
 
 .index-text h3 {
@@ -65,7 +65,7 @@
 }
 
 .index-text h3 span {
-    color: var(--lightBlue);
+    color: var(--bright2);
 }
 
 .index-text a {
@@ -83,16 +83,20 @@
 @media (max-width: 1200px) {
 
     .index-text h1 {
-        font-size: 48px;
-        margin-top: 100px;
+        font-size: 36px;
+        margin-top: 20px;
     }
 
     .index-text h2 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
-    .index-text a, .index-text h3 {
+    .index-text h3 {
         font-size: 24px;
+    }
+
+    .index-text a {
+        font-size: 18px;
     }
 
     #map {
@@ -109,13 +113,14 @@
     }
 
     .index-content-wrapper {
-        grid-template-columns: 90%;
-        grid-template-rows: 40vh 30vh 40vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
             "headshotImg"
             "introText"
             "map";
         max-height: none;
+        align-self: center;
     }
 
     .index-headshot-wrapper {
@@ -128,9 +133,12 @@
         height: 400px;
     }
 
+    .index-text {
+        margin-top: 100px;
+    }
+
     .index-text h1 {
         font-size: 36px;
-        margin-top: 20px;
     }
 
     .index-text h2 {

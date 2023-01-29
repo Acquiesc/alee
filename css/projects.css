@@ -129,6 +129,7 @@
 
     .main-content-wrapper header h1 {
         padding-left: 0;
+        font-size: 96px;
     }
 
 
@@ -154,6 +155,8 @@
     .project-container:nth-child(even) .project-text {
         order: 2;
     }
+
+    /*REDUCE HEADER FONT SIZE*/
 
     .project-text {
         max-width: 90vw;
