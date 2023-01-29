@@ -13,7 +13,7 @@
     background-color: black;
     margin-top: 5vh;
     border: 1px solid gray;
-    background-color: rgb(29, 45, 68); /*navy blue*/
+    background-color: var(--navyBlue); /*navy blue*/
     border-radius: 25px;
     z-index: 500;
     height: 90vh;
@@ -25,7 +25,7 @@
     max-width: 35vw;
     margin: 10px 15px;
     text-align: center;
-    background-color: rgb(62, 92, 118); /*blue green*/
+    background-color: var(--blueGreen); /*blue green*/
     border-radius: 25px;
 }
 
@@ -107,15 +107,16 @@
 .exp-header {
     text-align: center;
     margin-bottom: 20px;
-    text-decoration: solid underline 3px rgb(13, 19, 33);
+    text-decoration: solid underline 3px var(--darkBlue);
     text-underline-offset: 4px;
 }
 
-/*Text description*/
+/*Text description  swapped bkgrd color rgba to rgb + opac*/
 .exp-wrapper-text {
     margin-right: 15%;
     margin-bottom: 100px;
-    background-color: rgba(116, 140, 171, .5);
+    background-color: var(--lightBlue);
+    opacity: .5;
     border-radius: 25px;
     border: 1px solid gray;
     padding: 20px;

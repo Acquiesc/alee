@@ -4,7 +4,7 @@
 /*
 
 Color Palette:
-background-color: rgb(240, 235, 216); beige
+background-color: rgb(240, 235, 216); bright1
 background-color: rgb(72, 149, 239); bright blue
 background-color: rgb(116, 140, 171); light blue
 background-color: rgb(62, 92, 118); blue-green
@@ -14,6 +14,14 @@ background-color: rgb(13, 19, 33); dark blue
 https://coolors.co/palette/0d1321-1d2d44-3e5c76-748cab-f0ebd8
 
 */
+:root {
+    --bright1: rgb(240, 235, 216); 
+    --bright2: rgb(116, 140, 171);
+    --bright3: rgb(72, 149, 239); 
+    --dark1: rgb(62, 92, 118); 
+    --dark2: rgb(29, 45, 68); 
+    --dark3: rgb(13, 19, 33);
+}
 
 /*all style*/
 a:hover {
@@ -35,7 +43,7 @@ h2 {
 
 .bold {
     font-weight: 800 !important;
-    color: rgb(13, 19, 33) !important;
+    color: var(--dark3) !important;
 }
 
 /*Wrap main content*/
@@ -53,7 +61,7 @@ h2 {
 /*Background*/
 .background-back {
     z-index: -1000;
-    background-color: rgb(29, 45, 68); /*navy blue*/
+    background-color: var(--dark2); /*navy blue*/
     min-height: 100vh;
     min-width: 100vw;
     position: fixed;
@@ -64,7 +72,7 @@ h2 {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 0 43%);
     min-height: 100vh;
     min-width: 100vw;
-    background-color: rgb(13, 19, 33); /*dark blue*/
+    background-color: var(--dark3); /*dark blue*/
     position: fixed;
 }
 
@@ -85,13 +93,13 @@ h2 {
 .nav-left ul {
     position: absolute;
     left: 25%;
-    top: 35%;
+    top: 25%;
 }
 
 .nav-left ul li {
     margin-top: 20px;
     font-size: 36px;
-    background-color: rgb(116, 140, 171); /*light blue*/
+    background-color: var(--bright2); /*light blue*/
     border-radius: 50px;
     padding: 10px;
     transition: background-color .5s ease-in-out;
@@ -100,7 +108,7 @@ h2 {
 }
 
 .nav-left ul li:hover {
-    background-color: rgb(240, 235, 216); /*beige*/
+    background-color: var(--bright1); /*bright1*/
     height: 72px;
     width: 75px;
 }

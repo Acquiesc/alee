@@ -55,7 +55,7 @@
 }
 
 .index-text h1 span {
-    color: rgb(72, 149, 239); /*bright blue*/
+    color: var(--brightBlue); /*bright blue*/
 }
 
 .index-text h3 {
@@ -65,7 +65,7 @@
 }
 
 .index-text h3 span {
-    color: rgb(116, 140, 171);
+    color: var(--lightBlue);
 }
 
 .index-text a {
