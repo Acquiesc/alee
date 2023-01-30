@@ -1,6 +1,7 @@
 /*GENERAL STYLING*/
 .main-content-wrapper {
     display: block;
+    max-width: 100vw;
 }
 
 /*FIXED RIGHT SKILLS*/
@@ -137,8 +138,8 @@
     /*Skills restyle*/
     .skills-container {
         right: 5%;
-        margin-top: 25px;
-        max-height: 85vh;
+        margin-top: 10px;
+        max-height: 86vh;
         justify-content: space-around;
     }
 
@@ -164,6 +165,7 @@
     .skills-tag p {
         font-size: 14px;
         padding: 0;
+        line-height: 24px;
     }
 
 
@@ -209,6 +211,7 @@
     .skills-wrapper p {
         font-size: 18px;
         padding: 0;
+        line-height: 36px;
     }
 
     .skills-tag {
@@ -234,5 +237,20 @@
     .exp-wrapper-text {
         min-width: 80vw;
         margin: 25px auto;
+    }
+}
+
+@media (max-width: 370px) {
+    .skills-container {
+        max-height: fit-content;
+    }
+
+    .skills-tag {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .skills-wrapper p {
+        line-height: 28px;
     }
 }
