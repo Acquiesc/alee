@@ -25,7 +25,7 @@
 .contact-form-wrapper form fieldset legend {
     font-size: 36px;
     padding: 0 .25em;
-    color: white;
+    color: var(--white);
 }
 
 .label-input-container {
@@ -35,7 +35,7 @@
 .label-input-container label {
     display: block;
     font-size: 32px;
-    color: white;
+    color: var(--white);
 }
 
 .label-input-container:first-of-type {
@@ -45,8 +45,8 @@
 input, textarea {
     padding: .5em;
     border: solid 1px gray;
-    color: white;
-    background-color: rgba(151, 148, 148, 0.3);
+    color: var(--white);
+    background-color: var(--darkGrayTrans);
     font-size: 24px;
 }
 
@@ -66,8 +66,8 @@ textarea {
 button {
     padding: 7px;
     border: 2px solid gray;
-    background-color: rgba(151, 148, 148, 0.3);
-    color: white;
+    background-color: var(--darkGrayTrans);
+    color: var(--white);
     font-size: 24px;
     border-radius: 25px;
     transition: background-color .5s ease;
@@ -86,9 +86,9 @@ button:hover {
 
 /*Alternate contact styling*/
 .contact-alternate-wrapper {
-    color: white;
+    color: var(--white);
     width: 40vw;
-    background-color: rgba(211, 209, 209, 0.3);
+    background-color: var(--darkGrayTrans);
     padding: 20px 0;
     margin: auto;
     margin-top: 10px;
@@ -103,7 +103,7 @@ button:hover {
 }
 
 .contact-alternate-wrapper h1 {
-    text-decoration: 2px solid underline #111;
+    text-decoration: 2px solid underline var(--black);;
     margin-bottom: 20px;
 }
 

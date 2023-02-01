@@ -19,13 +19,13 @@
     </div>
 
     <nav class = "nav-left">
-            <ul>
-                <a href = "javascript:void(0)" onlick="return getColors" id="colorBtn"><li><i class="fa-solid fa-lightbulb"></i></li></a>
-                <a href = "index.html"><li><i class="fa-solid fa-house"></i></li></a>
-                <a href = "skills.html"><li><i class="fa-solid fa-book"></i></li></a>
-                <a href = "projects.html"><li><i class="fa-solid fa-computer"></i></li></a>
-                <a href = "contact.html"><li><i class="fa-solid fa-comment"></i></li></a>
-            </ul>   
+        <ul>
+            <li onmouseenter = "hoverOn(this)" onmouseleave = "hoverOff(this)" id="colorBtn"><a href = "javascript:void(0)" onlick="return getColors"></a><i class="fa-solid fa-lightbulb"></i></a></li>
+            <a href = "index.html"><li onmouseenter = "hoverOn(this)" onmouseleave = "hoverOff(this)" id="homeBtn"><i class="fa-solid fa-house"></i></li></a>
+            <a href = "skills.html"><li onmouseenter = "hoverOn(this)" onmouseleave = "hoverOff(this)" id="skillsBtn"><i class="fa-solid fa-book"></i></li></a>
+            <a href = "projects.html"><li onmouseenter = "hoverOn(this)" onmouseleave = "hoverOff(this)" id="projectBtn"><i class="fa-solid fa-computer"></i></li></a>
+            <a href = "contact.html"><li onmouseenter = "hoverOn(this)" onmouseleave = "hoverOff(this)" id="contactBtn"><i class="fa-solid fa-comment"></i></li></a>
+        </ul>   
     </nav>
 
     <main class = "main-content-wrapper">
@@ -150,7 +150,8 @@
         </section>
         
         <script defer src="./js/fade.js"></script>
-        <script defer src="./js/colorTheme.js"></script>
+        <script defer onload="setInitialTheme()" src="./js/colorTheme.js"></script>
+        <script defer src="./js/navHover.js"></script>
     </main>
 
 </body>

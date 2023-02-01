@@ -1,6 +1,7 @@
 /*GENERAL PROJECT STYLING*/
 .main-content-wrapper {
     display: block;
+    max-width: 99vw;
 }
 
 
@@ -62,9 +63,9 @@
 /*Text*/
 .project-text {
     padding: 50px;
-    background-color: rgba(211, 209, 209, 0.3);
+    background-color: var(--darkGrayTrans);
     border: 4px solid gray;
-    color: rgb(240, 235, 216);
+    color: var(--white);
     max-width: 45%;
 }
 
@@ -106,8 +107,8 @@
     font-size: 24px;
     padding: 7px;
     border: 2px solid gray;
-    background-color: rgba(151, 148, 148, 0.3);
-    color: rgb(240, 235, 216);
+    background-color: var(--darkGrayTrans);
+    color: var(--white);
     border-radius: 25px;
     transition: background-color .5s ease;
 
@@ -118,7 +119,7 @@
 
 .project-button-wrapper a:hover {
     cursor: pointer;
-    background-color: rgba(151, 148, 148, 0.6);
+    background-color: var(--lightGrayTrans);
 }
 
 @media (max-width: 1200px) {
