@@ -23,6 +23,7 @@ function hoverOn(e) {
 
     text.setAttribute("id", "nav-display-text")
     text.style.fontSize = '16px';
+    text.style.color = 'var(--white)';
     e.appendChild(text);
 
     e.setAttribute("class", "nav-active-hover");

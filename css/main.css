@@ -126,7 +126,7 @@ h2 {
 }
 
 .nav-left ul li:hover {
-    background-color: var(--bright1);
+    background-color: var(--dark1);
     cursor: pointer;
 }
 
