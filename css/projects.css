@@ -78,11 +78,12 @@
 }
 
 .skill-tags {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     gap: 20px;
     font-size: 18px;
     justify-content: left;
-    height: 2em;
 }
 
 .project-container:nth-child(even) .skill-tags {
@@ -157,8 +158,6 @@
         order: 2;
     }
 
-    /*REDUCE HEADER FONT SIZE*/
-
     .project-text {
         max-width: 90vw;
         margin: auto;
@@ -206,6 +205,7 @@
 
     .skill-tags {
         font-size: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .skill-tags:hover {

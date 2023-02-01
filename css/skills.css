@@ -242,10 +242,9 @@
     }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 385px) {
     .skills-container {
         max-height: none;
-        
     }
 
     .skills-tag {
