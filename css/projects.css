@@ -87,7 +87,9 @@
 }
 
 .project-container:nth-child(even) .skill-tags {
-    justify-content: right;
+    display: flex;
+    float: right;
+    gap: 5rem;
 }
 
 .skill-tags h4:hover {

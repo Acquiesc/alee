@@ -1,5 +1,11 @@
+//portfolio display gifs
 const portVids = document.getElementById('portvideo');
-const lpcVids = document.getElementById('lpcvideo')
+
+//starbucks display gifs
+const sbVids = document.getElementById('sbvideo');
+
+//lpc display gifs
+const lpcVids = document.getElementById('lpcvideo');
 
 let index = 1;
 var fileNum = 4;
@@ -15,6 +21,11 @@ function nextVid() {
     if(portVids) {
         portVids.src = "./images/projects/Portfolio/portfolio" + (index) + ".gif";
         console.log("Portfolio video set to index source: " + index);
+    }
+
+    if(sbVids) {
+        sbVids.src = "./images/projects/sb/sb" + (index) + ".gif";
+        console.log("SB video set to index source: " + index);
     }
 
     if(lpcVids) {

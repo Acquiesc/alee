@@ -49,7 +49,7 @@
                         <h4>API</h4>
                     </div>
                     <p>A portfolio website built to display my skills and progress in becoming a developer.
-                        Utilizes HTML and CSS to create a clean, desktop-first reactive display.  Utilizes Javascript to
+                        Utilizes HTML and CSS to create a clean, desktop-first responsive display.  Utilizes Javascript to
                         implement fade transitions.  Utilizes Email JS integration to pull variables from
                         contact form into a sendable email.  Utilizes the TomTom navigation API to display
                         a location pin.
@@ -63,6 +63,33 @@
 
             <div class = "project-container hidden">
                 <div class = "project-text" id="projectTextRight">
+                    <h1>Starbucks Clone</h1>
+                    <div class = "skill-tags">
+                        <h4>HTML</h4>
+                        <h4>CSS</h4>
+                        <h4>Javascript</h4>
+                    </div>
+                </br>
+                    <p>A project to focus on commercial design, mobile first responsive layouts, 
+                        and turning design requests into a reality.  Javascript utilized to create
+                        the side navigation menu and dropdown footer menus.  Currently designing and
+                        implementing more pages, a user authentication system, and a user shopping cart
+                    </p>
+                    <div class = "project-button-wrapper">
+                        <a href="https://acquiesc.github.io/starbucks-clone/">View Website</a>
+                        <a href="https://github.com/Acquiesc/starbucks-clone">View Frontend Source Code</a>
+                    </div>
+                </div>
+                <div class = "project-img" id="lpc">
+                    <img src = "./images/projects/sb/sb1.gif" id="sbvideo"></img>
+                </div>
+            </div>
+
+            <div class = "project-container hidden">
+                <div class = "project-img">
+                    <img src = "./images/projects/lpc/lpc1.gif" id="lpcvideo"></img>
+                </div>
+                <div class = "project-text">
                     <h1>Little Painted Cat</h1>
                     <div class = "skill-tags">
                         <h4>HTML</h4>
@@ -79,11 +106,8 @@
                     </p>
                     <div class = "project-button-wrapper">
                         <a href="https://acquiesc.github.io/littlepaintedcat/">View Website</a>
-                        <a href="https://github.com/Acquiesc/littlepaintedcat">View Frontend Source Code</a>
+                        <a href="https://github.com/Acquiesc/littlepaintedcat">View Source Code</a>
                     </div>
-                </div>
-                <div class = "project-img" id="lpc">
-                    <img src = "./images/projects/lpc/lpc1.gif" id="lpcvideo"></img>
                 </div>
             </div>
 
@@ -93,7 +117,8 @@
     <script defer src="./js/fade.js"></script>
     <script defer src="./js/scrollPortfolioGifs.js"></script>
     <script defer src="./js/scrollLPCGifs.js"></script>
-    <script defer onload="setInitialTheme()" src="./js/colorTheme.js"></script>
+    <script defer src="./js/scrollSb.js"></script>
+    <script onload="setInitialTheme()" src="./js/colorTheme.js"></script>
     <script defer src="./js/navHover.js"></script>
 
 </body>
