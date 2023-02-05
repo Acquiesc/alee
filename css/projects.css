@@ -69,12 +69,13 @@
     max-width: 45%;
 }
 
-#projectTextRight {
-    text-align: right;
+.project-text h1 {
+    font-size: 64px;
+    padding-bottom: 1rem;
 }
 
-#projectTextRight p {
-    text-align: left;
+.project-text p {
+    line-height: 2.3rem;
 }
 
 .skill-tags {
@@ -173,12 +174,8 @@
         max-height: 100%;
     }
 
-    #projectTextRight {
-        text-align: left;
-    }
-
     .project-container:nth-child(even) .skill-tags {
-        justify-content: left;
+        float: left;
     }
 }
 
