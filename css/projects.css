@@ -188,9 +188,10 @@
         left: 25px;
     }
 
-    .project-container:nth-child(even) .skill-tags, #projectTextRight {
+    .project-container:nth-child(even) .skill-tags {
         justify-content: left;
         text-align: left;
+        gap: 2.5rem;
     }
 
     .project-img {
