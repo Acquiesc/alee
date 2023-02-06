@@ -74,6 +74,10 @@
     padding-bottom: 1rem;
 }
 
+.project-container:nth-child(even) .project-text h1 {
+    text-align: right;
+}
+
 .project-text p {
     line-height: 2.3rem;
 }
@@ -172,6 +176,10 @@
 
     .project-img video {
         max-height: 100%;
+    }
+
+    .project-container:nth-child(even) .project-text h1 {
+        text-align: left;
     }
 
     .project-container:nth-child(even) .skill-tags {
