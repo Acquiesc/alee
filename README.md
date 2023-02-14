@@ -1,6 +1,6 @@
 # **ALee**
-My personal portfolio
-A portfolio website built to display my skills, education, experience, projects, and progress on becoming a developer.
+My personal portfolio</br>
+A website built to display my skills, education, experience, projects, and progress on becoming a developer.
 
 [Visit the live website](https://acquiesc.github.io/alee/)
 
