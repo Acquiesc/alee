@@ -116,7 +116,6 @@
 @media (min-width: 1024px) {
     .skill-grid {
         grid-template-columns: 50vw 50vw;
-        grid-auto-flow: dense;
     }
 
     .skills-container {
@@ -128,5 +127,14 @@
 
     .exp-scroll-container {
         order: 1;
+    }
+}
+
+@media( min-width: 1201px)
+{
+    .skill-grid {
+        grid-template-columns: 50% 50%;
+        width: calc(100vw - 125px);
+        margin-left: auto;
     }
 }
