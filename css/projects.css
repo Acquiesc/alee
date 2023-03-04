@@ -61,7 +61,8 @@
 }
 
 .project-img iframe {
-    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /*Text*/
