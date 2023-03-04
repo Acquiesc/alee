@@ -60,6 +60,10 @@
     margin-top: 20%;
 }
 
+.project-img iframe {
+    width: 100%;
+}
+
 /*Text*/
 .project-text {
     padding: 50px;
@@ -231,5 +235,11 @@
     .project-button-wrapper a {
         font-size: 16px;
         padding: 6px 4px;
+    }
+}
+
+@media (max-width: 300px) {
+    .skill-tags {
+        grid-template-columns: 1fr 1fr;
     }
 }
