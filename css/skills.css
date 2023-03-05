@@ -87,6 +87,10 @@
     text-align: center;
 }
 
+.exp-wrapper {
+    margin-top: 20vh;
+}
+
 .exp-wrapper-text {
     background-color: var(--dark1);
     padding: 1rem;
