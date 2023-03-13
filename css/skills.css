@@ -133,14 +133,14 @@
 
     .skills-container {
         position: fixed;
-        width: 40vw;
+        width: 35vw;
         right: 2rem;
         margin-top: 1rem;
     }
 
     .exp-scroll-container {
         order: 1;
-        width: 50vw;
+        width: 45vw;
         margin-left: 2rem;
     }
 }
